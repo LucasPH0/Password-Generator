@@ -2,26 +2,40 @@
     font-family: sans-serif;
     width: 100%;
     margin: 0 auto;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body{
     background: url(assets/bg.png) no-repeat top center/cover;
     height: 100vh;
+
+    width: 100%;
+    max-width: 588px;
+    margin: 120px auto 0px;
+    padding: 0px 24px;
+}
+
+#container {
+    width: 100%;
+    max-width: 588px;
+    /* border: 1px solid red; */
+    margin: 56px auto 0px;
+    padding: 0px 24px;
+}
+
+#top {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    padding: 24px;
 }
 
-.alux{
-    max-width: 300px;
-    margin-bottom: 150px;   
-}
-
-.logo{
-    max-width: 600px;
-    margin-bottom: 38px;   
+#logo,
+#tittle {
+  padding: 24px;
+  max-width: 800px;
 }
 
 .container-input{
@@ -38,23 +52,42 @@ body{
 .slider{
     -webkit-appearance: none;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 30px;
     background: #DFDFDF;
-    height: 18px;
+    height: 25px;
     outline: none;
-    margin-top: 8px;
+    margin-top: 25px;
 }
 
+    .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: rgb(173, 9, 9); 
+    border-radius: 50%;
+    cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: rgb(173, 9, 9);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+
 .button-cta{
-    height: 80px;
-    background-color: #3EB72B;
+    height: 60px;
+    background-color: rgb(173, 9, 9); 
     border: 0;
     border-radius: 10px;
     cursor: pointer;
     margin-top: 40px;
     color: white;
     font-weight: bold;
-    font-size: 38px;  
+    font-size: 30px;  
 }
 
 .container-password{
@@ -113,4 +146,17 @@ body{
     visibility: visible;
     bottom: 50px;
     opacity: 1;
+}
+
+/* Media queries */
+@media (max-width: 550px) {
+    body {
+        background-image: url("./assets/bg-mobile.png");
+    }
+}
+
+@media (min-width: 551px) {
+    body {
+        background-image: url("./assets/bg.png");
+    }
 }
