@@ -6,8 +6,7 @@
 }
 
 body{
-    background-color: #18181B;
-    width: 100%;
+    background: url(assets/bg.png) no-repeat top center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,9 +14,14 @@ body{
     flex-direction: column;
 }
 
+.alux{
+    max-width: 300px;
+    margin-bottom: 150px;   
+}
+
 .logo{
     max-width: 600px;
-    margin-bottom: 24px;   
+    margin-bottom: 38px;   
 }
 
 .container-input{
@@ -42,15 +46,15 @@ body{
 }
 
 .button-cta{
-    height: 40px;
+    height: 80px;
     background-color: #3EB72B;
     border: 0;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
     margin-top: 40px;
     color: white;
     font-weight: bold;
-    font-size: 18px;  
+    font-size: 38px;  
 }
 
 .container-password{
