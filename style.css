@@ -147,6 +147,41 @@ body{
     bottom: 50px;
     opacity: 1;
 }
+  
+  #social-links {
+    /*border: 1px solid;*/
+    display: flex;
+    padding: 50px 0px 30px;
+    font-size: 28px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #social-links a {
+    display: flex;
+    margin: 0 15px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    padding: 16px;
+    transition: background 0.2s; /* Adicionei aqui para a transição suave */
+    width: 60px; /* Certifique-se de que a largura e a altura sejam iguais para criar um círculo */
+    height: 60px;
+  }
+  
+  #social-links a:hover {
+  padding: 16px;
+  background: rgba(146, 146, 146, 0.15);
+  transition: background 0.2s;
+  }
+  
+  footer {
+    color: white;
+    padding: 24px;
+    text-align: center;
+    font-size: 14px;
+  }
 
 /* Media queries */
 @media (max-width: 550px) {
