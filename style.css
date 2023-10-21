@@ -196,13 +196,13 @@ body{
   }
 
 /* Media queries */
-@media (max-width: 550px) {
+@media (max-width: 700px) {
     body {
         background-image: url("./assets/bg-mobile.png");
     }
 }
 
-@media (min-width: 551px) {
+@media (min-width: 701px) {
     body {
         background-image: url("./assets/bg.png");
     }
