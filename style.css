@@ -165,8 +165,8 @@ body{
     color: white;
     border-radius: 50%;
     padding: 16px;
-    transition: background 0.2s; /* Adicionei aqui para a transição suave */
-    width: 60px; /* Certifique-se de que a largura e a altura sejam iguais para criar um círculo */
+    transition: background 0.2s; 
+    width: 60px; 
     height: 60px;
   }
   
