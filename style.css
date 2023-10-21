@@ -56,7 +56,8 @@ body{
     background: #DFDFDF;
     height: 25px;
     outline: none;
-    margin-top: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
     .slider::-webkit-slider-thumb {
@@ -78,7 +79,11 @@ body{
     cursor: pointer;
     }
 
-.button-cta{
+    .slider:hover {
+        background-color: rgb(183, 183, 183);
+    }
+
+.button-cta {
     height: 60px;
     background-color: rgb(173, 9, 9); 
     border: 0;
@@ -88,6 +93,13 @@ body{
     color: white;
     font-weight: bold;
     font-size: 30px;  
+    transition: background 0.2s;
+}
+
+.button-cta:hover {
+        background-color: rgb(158, 13, 13);
+        border: 1.5px solid var(--text-color);
+        border: 1px solid #ff7575;
 }
 
 .container-password{
